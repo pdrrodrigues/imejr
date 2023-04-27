@@ -14,9 +14,10 @@
 
 header {
     display: flex;
+    position: fixed;
     margin: 0px;
     top: 0px;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background: #000000;
     alling-items: center;
@@ -24,6 +25,7 @@ header {
 
 nav {
     display: flex;
+    float: right;
     justify-content: space-between;
     alling-items: center;
     margin: 30px 100px 0 600px;
@@ -46,6 +48,20 @@ nav ul li a {
     text-decoration: none;
 }
 
-.insta img{
+a:hover {
+    color: #0000FF;
+}
+
+.icon svg:hover path {
+    fill: #0000FF;
+  }
+
+.icon svg{
     margin: -5px;
 }
+
+@media only screen and (max-width: 768px) {
+    nav { 
+        flex-wrap: wrap; 
+    }
+  }
