@@ -1,0 +1,51 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+.logo img{
+    height: 100%;
+}
+
+.logo{
+    height: auto;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    margin: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100px;
+    background: #000000;
+    alling-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    alling-items: center;
+    margin: 30px 100px 0 600px;
+    z-index: 100;
+}
+nav ul {
+    display: flex;  
+    alling-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: "Inter", sans-seriff;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.insta img{
+    margin: -5px;
+}
