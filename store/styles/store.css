@@ -5,6 +5,7 @@
 
 body {
     background-color: #8f0b0b;
+    margin: 0;
 }
 
 .store {
@@ -12,24 +13,28 @@ body {
     background-repeat: no-repeat;
     background-size: 95%;
     background-position: center;
+    padding: 0 0 100px 0;
 }
 
 .text-store {
     font-family: customFonts, Arial;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
     display: block;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .products-store {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
     row-gap: 15px;
     column-gap: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0;
+    margin: 0 5%;
 }
 
 .square {
@@ -45,6 +50,16 @@ body {
     border-color: black;
 }
 
+.square:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.square:active {
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgb(255, 255, 255, 0.2);
+}
+
 .product {
     width: 60%;
 }
@@ -54,13 +69,67 @@ body {
 }
 
 .product-name {
-    font-weight: bold;
+    font-size: 1rem;
     margin: 0;
     text-align: center;
 }
 
 .product-price {
-    font-weight: bold;
+    font-size: 1rem;
     margin: 0;
     text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .text-store {
+        font-size: 1.85rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .text-store {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    .product {
+        width: 55%;
+    }
+    
+    .product-name {
+        font-size: 0.9rem;
+    }
+    
+    .product-price {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .store {
+        width: 840px;
+        margin: auto;
+    }
+
+    .text-store {
+        font-size: 32px;
+    }
+
+    .products-store {
+        grid-template-columns: 237px 237px 237px;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .square {
+        width: 235px;
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+    
+    .product-price {
+        font-size: 16px;
+    }
 }
