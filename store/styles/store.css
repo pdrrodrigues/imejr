@@ -1,0 +1,66 @@
+@font-face {
+    font-family: customFonts;
+    src: url('../fonts/Graduate-Regular.ttf');
+}
+
+body {
+    background-color: #8f0b0b;
+}
+
+.store {
+    background-image: url('../images/GRIFO - Logo 1.png');
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center;
+}
+
+.text-store {
+    font-family: customFonts, Arial;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.products-store {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    aspect-ratio: 1;
+    border-width: 1px;
+    border-radius: 15%;
+    border-style: solid;
+    border-color: black;
+}
+
+.product {
+    width: 60%;
+}
+
+.shirt {
+    width: 100%
+}
+
+.product-name {
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.product-price {
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
