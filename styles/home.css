@@ -39,8 +39,6 @@ body {
 
 .background img {
     display: block;
-    vertical-align:bottom;
-    line-height: 0%;
     width: 100%;
     height: 100%;
     position: relative;
@@ -62,6 +60,7 @@ body {
     color: #000000;
     text-align: center;
     text-decoration: none;
+    margin: 0;
 }
 
 .fundo {
@@ -141,7 +140,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-bottom: 4vw;
 }
 .fundo img {
     width: 50%;
