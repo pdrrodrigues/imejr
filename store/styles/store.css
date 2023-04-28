@@ -26,7 +26,7 @@ body {
 }
 
 .nav-left {
-    height: 100px;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -39,8 +39,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: 100px;
-    width: 70%;
+    height: 100%;
+    width: 50%;
 }
 
 .header-font {
@@ -60,7 +60,7 @@ body {
 }
 
 .store {
-    display: block;
+    width: 100%;
     background-image: url('../images/GRIFO - Logo 1.png');
     background-repeat: no-repeat;
     background-size: 95%;
@@ -127,28 +127,54 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .nav-right {
         flex: 1;
     }
-    
+}
+
+@media screen and (max-width: 700px) {
     .text-store {
-        font-size: 1.85rem;
+        font-size: 1.75rem;
     }
 
     .products-store {
         grid-template-columns: 1fr 1fr;
+        margin: 0 15%;
     }
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 500px) {
+    body {
+        padding-top: 250px;
+    }
+
+    .header{
+        flex-direction: column;
+        height: 250px;
+        width: 100%;
+    }
+    
+    .nav-left {
+        height: 40%;
+    }
+    
+    .nav-right {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .header-font {
+        font-size: 1rem;
+    }
+
     .text-store {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
     }
 
     .products-store {
         grid-template-columns: 1fr;
-        margin: 0 20%;
+        margin: auto;
     }
 }
 
