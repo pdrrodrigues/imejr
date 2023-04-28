@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding-top: 100px;
+}
+
+.arranjo{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    height: 59.6vh;
+}
+
+.subway{
+    height: 59.6vh;
+    width: 100vw;
+    background-color: #8f0b0b;
+}
+
+.vikings{
+    height: 59.6vh;
+    width: 100vw;
+}
+
+.tialilica{
+    height: 59.6vh;
+    width: 100vw;
+    background-color: #8f0b0b;
+}
+
+.retrato{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    max-height: 59.8vh;
+    /*border-color: rgb(24, 194, 61);
+    border-style: solid;*/
+}
+
+.imagem{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    max-height: 80%;
+    object-fit: contain;
+    /* border-color: blue;
+    border-style: solid;*/
+    height:auto;
+    width:60%;  
+}
+
+.textogrande{
+    color: white;
+    font-size: max(53px, 8vw);
+    font-family: graduate;
+}
+        
+.textopequeno{
+    font-size: max(27px, 2vw);
+    color: white;
+    padding-right: 4vw;
+    display: flex;
+    justify-content:center;
+    font-family: graduate;
+    min-width: 465px;
+}
+
+.textograndepreto{
+    font-size: max(53px, 8vw);
+    font-family: graduate;
+    color: black;
+}
+
+.textopequenopreto{
+    font-size: max(27px, 2vw);
+    font-family: graduate;
+    color: black;
+    padding-right: 4vw;
+    display: flex;
+    justify-content:center;
+    min-width: 465px;
+} 
+        
+.textos{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+    text-justify: auto;
+    min-width: 271.6px;
+    max-height: 59.8vh;
+    min-height: 319px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding-top: 250px;
+    }
+}
