@@ -147,6 +147,9 @@ body {
 }
 }
 
+.tela, .fundo {
+    flex-basis: 50%;
+}
 
 .lojinha img:hover {
     content: url("../images/camisa.png");
