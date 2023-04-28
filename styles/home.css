@@ -37,10 +37,13 @@ body {
     z-index: 20;
 }
 
+.background {
+    padding: 0;
+    margin: 0;
+}
+
 .background img {
     display: block;
-    vertical-align:bottom;
-    line-height: 0%;
     width: 100%;
     height: 100%;
     position: relative;
@@ -67,6 +70,8 @@ body {
 
 .fundo {
     background-color: #8F0B0B;
+    margin: 0;
+    padding: 0 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
