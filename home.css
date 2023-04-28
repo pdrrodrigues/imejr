@@ -1,0 +1,233 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+ }
+
+.logo img{
+    height: 100%;
+}
+
+.logo{
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background: #000000;
+    alling-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+    margin: 30px;
+    margin-left: auto;
+}
+
+.nav a {
+    font-family: "Inter", sans-seriff;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #0000FF;
+}
+
+.icon svg:hover path {
+    fill: #0000FF;
+  }
+
+.icon svg{
+    margin: -5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav {
+        width: 70%;
+    }
+    .nav a {
+        font-size: 10px;
+    }
+    .icon svg{
+        width:24px; 
+        height:24px; 
+        margin: -10px;
+    }
+    .background {
+  display: inline-block; /* to remove any default margin or padding */
+  line-height: 0; /* to remove any additional space caused by text or inline elements */
+}
+
+.background img {
+  display: block; /* to remove any default margin or padding */
+}
+ }
+
+.grifo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.symbol img{
+    position: absolute;
+    margin-top: -45vw;
+    height: 35vw;
+    z-index: 20;
+}
+
+.background img {
+    display: block;
+    vertical-align:bottom;
+    line-height: 0%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 85px;
+    opacity: 0.4;
+    left: 0;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.legenda {
+    display: block;
+    margin-top: -7%;
+    top: -40px;
+    font-family: 'Inter', sans-seriff;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 10rem;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fundo {
+    background-color: #8F0B0B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 4vw;
+}
+
+.lojinha img {
+    border: 5px solid #000000;
+    background-color: #FFFFFF;
+}
+
+.eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.lojinha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.parcerias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fundo img {
+    width: 100%;
+    margin-top: 2vh;
+    border: 5px solid #000000;
+}
+
+.fundo h1 {
+    margin-top: 8vh;
+}
+
+.fundo p{
+    margin-top: 5vh;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 2rem;
+    width: 50vh;
+    margin-botton: -2vh;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav {
+        width: 70%;
+    }
+    .nav a {
+        font-size: 10px;
+    }
+    .icon svg{
+        width:24px; 
+        height:24px; 
+        margin: -10px;
+    }
+    .background img {
+        height: auto !important;
+    }
+ }
+ @media only screen and (max-width: 920px) {
+ .fundo {
+    background-color: #8F0B0B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 4vw;
+}
+.fundo img {
+    width: 50%;
+    margin-top: 2vh;
+    border: 5px solid #000000;
+}
+}
+
+
+.lojinha img:hover {
+    content: url(imagens/camisa.png);
+}
+
+.eventos img:hover {
+    content: url(imagens/events.jpeg);
+    width: 400px;
+}
+
+.parcerias img:hover {
+    content: url(imagens/renomear.png);
+}
