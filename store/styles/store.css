@@ -40,15 +40,23 @@ body {
     align-items: center;
     justify-content: space-around;
     height: 100px;
-    width: 50%;
+    width: 70%;
 }
 
 .header-font {
     font-family: "Inter", sans-serif;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.header-font:hover {
+    color: #0000FF;
+}
+
+.insta svg:hover path{
+    fill: #0000FF;
 }
 
 .store {
@@ -120,26 +128,27 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+    .nav-right {
+        flex: 1;
+    }
+    
     .text-store {
         font-size: 1.85rem;
     }
+
+    .products-store {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 465px) {
     .text-store {
         font-size: 1.8rem;
     }
 
-    .product {
-        width: 55%;
-    }
-    
-    .product-name {
-        font-size: 0.9rem;
-    }
-    
-    .product-price {
-        font-size: 0.9rem;
+    .products-store {
+        grid-template-columns: 1fr;
+        margin: 0 20%;
     }
 }
 
