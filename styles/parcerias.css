@@ -1,3 +1,8 @@
+@font-face {
+    font-family: graduate;
+    src: url('../fonts/Graduate-Regular.ttf');
+}
+
 body{
     margin: 0;
     padding-top: 100px;
@@ -64,6 +69,7 @@ body{
 }
 
 .textograndepreto{
+
     font-size: max(53px, 8vw);
     font-family: graduate;
     color: black;

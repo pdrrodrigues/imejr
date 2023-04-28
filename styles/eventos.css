@@ -1,3 +1,8 @@
+    @font-face {
+        font-family: graduate;
+        src: url('../fonts/Graduate-Regular.ttf');
+    }
+    
     *,html{
         margin: 0;            
         padding: 0;
@@ -81,7 +86,7 @@
 
     .titulo_um{
         color: white;
-        font-family: Graduate;
+        font-family: graduate;
         letter-spacing: 7px;
         font-size: max(20px, 3.6vw);
           
@@ -97,7 +102,7 @@
 
     .titulo_dois{
         color: black;
-        font-family: Graduate;
+        font-family: graduate;
         letter-spacing: 7px;
         font-size: max(20px, 3.6vw)
 
