@@ -3,22 +3,13 @@
     padding:0;  
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
- }
-
-.logo img{
-    height: 100%;
+@media screen and (max-width: 500px) {
+    body {
+        padding-top: 250px;
+    }
 }
 
-.logo{
-    height: 100%;
-    object-fit: contain;
-    position: relative;
-}
-
-@keyframes slideInFromTop {
+ @keyframes slideInFromTop {
     0% {
       transform: translateY(-100%);
     }
@@ -26,68 +17,7 @@
       transform: translateY(0);
     }
   }
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 100px;
-    background: #000000;
-    alling-items: center;
-}
-
-.nav {
-    display: flex;
-    flex-direction: row;
-    float: right;
-    justify-content: space-around;
-    width: 50%;
-    height: 100%;
-    margin: 30px;
-    margin-left: auto;
-}
-
-.nav a {
-    font-family: "Inter", sans-seriff;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 36px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    color: #0000FF;
-}
-
-.icon svg:hover path {
-    fill: #0000FF;
-  }
-
-.icon svg{
-    margin: -5px;
-}
-
-@media only screen and (max-width: 700px) {
-    .nav {
-        width: 70%;
-    }
-    .nav a {
-        font-size: 10px;
-    }
-    .icon svg{
-        width:24px; 
-        height:24px; 
-        margin: -10px;
-    }
-    .background {
-  display: inline-block; /* to remove any default margin or padding */
-  line-height: 0; /* to remove any additional space caused by text or inline elements */
-}
-
+    
 .background img {
   display: block; /* to remove any default margin or padding */
 }
