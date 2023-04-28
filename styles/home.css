@@ -1,6 +1,6 @@
 *, html {
-    margin: 0;
-    padding: 0;  
+    margin:0;
+    padding:0;  
 }
 
 body {
@@ -32,13 +32,15 @@ body {
 
 .symbol img{
     position: absolute;
-    margin-top: -50vw;
+    margin-top: -45vw;
     height: 35vw;
     z-index: 20;
 }
 
 .background img {
     display: block;
+    vertical-align:bottom;
+    line-height: 0%;
     width: 100%;
     height: 100%;
     position: relative;
@@ -51,16 +53,14 @@ body {
 
 .legenda {
     display: block;
-    margin-top: -20%;
+    margin-top: -15%;
     top: 0px;
     font-family: 'Inter', sans-seriff;
     font-weight: 600;
     font-size: 3vw;
-    line-height: 10rem;
     color: #000000;
     text-align: center;
     text-decoration: none;
-    margin: 0;
 }
 
 .fundo {
@@ -68,8 +68,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-top: 10vh;
-    border-color: #8F0B0B;
+    margin-top: -2vw;
     padding-bottom: 4vw;
 }
 
@@ -140,6 +139,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 4vw;
 }
 .fundo img {
     width: 50%;
