@@ -18,10 +18,6 @@
     }
   }
     
-.background img {
-  display: block; /* to remove any default margin or padding */
-}
- }
 
 .grifo {
     display: flex;
@@ -150,14 +146,14 @@
 
 
 .lojinha img:hover {
-    content: url(images/camisa.png);
+    content: url(../images/camisa.png);
 }
 
 .eventos img:hover {
-    content: url(images/WhatsApp Image 2023-04-05 at 20.58.49.jpeg);
+    content: url(../images/WhatsApp Image 2023-04-05 at 20.58.49.jpeg);
     width: 400px;
 }
 
 .parcerias img:hover {
-    content: url(images/Captura de tela de 2023-04-06 17-05-59.png.png);
+    content: url(../images/Captura de tela de 2023-04-06 17-05-59.png.png);
 }
