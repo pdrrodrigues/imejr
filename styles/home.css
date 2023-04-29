@@ -155,6 +155,7 @@ body {
 
 .eventos img:hover {
     content: url("../images/WhatsApp Image 2023-04-05 at 20.58.49.jpeg");
+    width: 400px;
 }
 
 .parcerias img:hover {
