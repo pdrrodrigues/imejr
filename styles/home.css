@@ -99,7 +99,10 @@ body {
 }
 
 .fundo img {
-    width: 100%;
+    width: 70%;
+    height: 20vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     margin-top: 2vh;
     border: 5px solid #000000;
 }
@@ -110,10 +113,12 @@ body {
 
 .fundo p{
     margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
     text-align: justify;
     text-justify: inter-word;
     font-size: 2rem;
-    width: 50vh;
+    width: 70%;
     margin-botton: -2vh;
 }
 
@@ -133,8 +138,8 @@ body {
         height: auto !important;
     }
  }
- @media only screen and (max-width: 920px) {
- .fundo {
+ @media only screen and (max-width: 1200px) {
+.fundo {
     background-color: #8F0B0B;
     display: flex;
     flex-direction: column;
@@ -143,6 +148,7 @@ body {
 }
 .fundo img {
     width: 50%;
+    height: 40vw;
     margin-top: 2vh;
     border: 5px solid #000000;
 }
@@ -155,7 +161,6 @@ body {
 
 .eventos img:hover {
     content: url("../images/WhatsApp Image 2023-04-05 at 20.58.49.jpeg");
-    width: 400px;
 }
 
 .parcerias img:hover {
