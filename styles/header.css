@@ -12,6 +12,7 @@ body {
     top: 0px;
     position: fixed;
     background-color: black;
+    z-index: 4;
 }
 
 .nav-left {
