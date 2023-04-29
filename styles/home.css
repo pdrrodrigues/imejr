@@ -152,6 +152,10 @@ body {
     margin-top: 2vh;
     border: 5px solid #000000;
 }
+.fundo p {
+    width: 50%;
+    font-size: 1.5rem;
+}
 }
 
 
