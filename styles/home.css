@@ -77,26 +77,11 @@ body {
     background-color: #FFFFFF;
 }
 
-.eventos{
+.final{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.lojinha{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.parcerias{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
 
 .fundo img {
     width: 70%;
